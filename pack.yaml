@@ -1,0 +1,176 @@
+{
+  "name": "software-architecture-pack",
+  "version": "0.1.0",
+  "type": "skill-pack",
+  "summary": "Software architecture pack for Claude Code-style workflows.",
+  "recommended_order": [
+    "architecture-option-generator",
+    "monolith-vs-modular-monolith-reviewer",
+    "quality-attribute-scenario-writer",
+    "tradeoff-analysis-writer",
+    "layered-architecture-designer",
+    "service-decomposition-advisor",
+    "component-boundary-reviewer",
+    "integration-boundary-mapper",
+    "runtime-view-writer",
+    "deployment-view-writer",
+    "scalability-hotspot-detector",
+    "availability-strategy-reviewer",
+    "architecture-risk-assessor",
+    "adr-writer"
+  ],
+  "skills": [
+    {
+      "id": "architecture-option-generator",
+      "path": "skills/architecture-option-generator/SKILL.md",
+      "purpose": "Generate credible architecture options for a system and frame the decision as explicit tradeoffs rather than defaulting to a favorite style.",
+      "handoffs": [
+        "quality-attribute-scenario-writer",
+        "adr-writer",
+        "component-boundary-reviewer"
+      ]
+    },
+    {
+      "id": "monolith-vs-modular-monolith-reviewer",
+      "path": "skills/monolith-vs-modular-monolith-reviewer/SKILL.md",
+      "purpose": "Evaluate whether a codebase or proposed system should remain a monolith, become a modular monolith, or move further toward service decomposition.",
+      "handoffs": [
+        "component-boundary-reviewer",
+        "service-decomposition-advisor",
+        "adr-writer"
+      ]
+    },
+    {
+      "id": "layered-architecture-designer",
+      "path": "skills/layered-architecture-designer/SKILL.md",
+      "purpose": "Propose a layered architecture with clear responsibilities, dependency direction, and boundary rules.",
+      "handoffs": [
+        "component-boundary-reviewer",
+        "runtime-view-writer",
+        "deployment-view-writer"
+      ]
+    },
+    {
+      "id": "service-decomposition-advisor",
+      "path": "skills/service-decomposition-advisor/SKILL.md",
+      "purpose": "Assess service boundaries and decomposition candidates with explicit attention to cohesion, coupling, data ownership, and operational cost.",
+      "handoffs": [
+        "integration-boundary-mapper",
+        "runtime-view-writer",
+        "adr-writer"
+      ]
+    },
+    {
+      "id": "component-boundary-reviewer",
+      "path": "skills/component-boundary-reviewer/SKILL.md",
+      "purpose": "Review or define internal component boundaries so responsibilities, contracts, and dependencies stay coherent.",
+      "handoffs": [
+        "runtime-view-writer",
+        "deployment-view-writer",
+        "adr-writer"
+      ]
+    },
+    {
+      "id": "runtime-view-writer",
+      "path": "skills/runtime-view-writer/SKILL.md",
+      "purpose": "Describe the runtime behavior of the architecture including major components, request flows, async behavior, and failure paths.",
+      "handoffs": [
+        "deployment-view-writer",
+        "availability-strategy-reviewer",
+        "quality-attribute-scenario-writer"
+      ]
+    },
+    {
+      "id": "deployment-view-writer",
+      "path": "skills/deployment-view-writer/SKILL.md",
+      "purpose": "Map software elements onto environments, nodes, containers, or processes and explain the deployment consequences.",
+      "handoffs": [
+        "availability-strategy-reviewer",
+        "scalability-hotspot-detector",
+        "adr-writer"
+      ]
+    },
+    {
+      "id": "quality-attribute-scenario-writer",
+      "path": "skills/quality-attribute-scenario-writer/SKILL.md",
+      "purpose": "Convert vague quality goals like performance or maintainability into concrete architecture-driving scenarios.",
+      "handoffs": [
+        "architecture-risk-assessor",
+        "tradeoff-analysis-writer",
+        "adr-writer"
+      ]
+    },
+    {
+      "id": "architecture-risk-assessor",
+      "path": "skills/architecture-risk-assessor/SKILL.md",
+      "purpose": "Identify the main architectural risks, uncertainty points, and potential failure modes before the system hardens around them.",
+      "handoffs": [
+        "tradeoff-analysis-writer",
+        "adr-writer",
+        "availability-strategy-reviewer"
+      ]
+    },
+    {
+      "id": "adr-writer",
+      "path": "skills/adr-writer/SKILL.md",
+      "purpose": "Write an architecture decision record that preserves context, options considered, rationale, and consequences.",
+      "handoffs": [
+        "tradeoff-analysis-writer",
+        "deployment-view-writer",
+        "architecture-risk-assessor"
+      ]
+    },
+    {
+      "id": "tradeoff-analysis-writer",
+      "path": "skills/tradeoff-analysis-writer/SKILL.md",
+      "purpose": "Analyze competing architecture options against explicit criteria and show what is gained and lost with each path.",
+      "handoffs": [
+        "adr-writer",
+        "quality-attribute-scenario-writer",
+        "architecture-risk-assessor"
+      ]
+    },
+    {
+      "id": "integration-boundary-mapper",
+      "path": "skills/integration-boundary-mapper/SKILL.md",
+      "purpose": "Map where systems, modules, or services integrate and identify ownership, contracts, data movement, and coordination risk.",
+      "handoffs": [
+        "service-decomposition-advisor",
+        "deployment-view-writer",
+        "architecture-risk-assessor"
+      ]
+    },
+    {
+      "id": "scalability-hotspot-detector",
+      "path": "skills/scalability-hotspot-detector/SKILL.md",
+      "purpose": "Identify likely throughput, latency, resource, or coordination bottlenecks early from the architecture shape and workload assumptions.",
+      "handoffs": [
+        "availability-strategy-reviewer",
+        "deployment-view-writer",
+        "architecture-risk-assessor"
+      ]
+    },
+    {
+      "id": "availability-strategy-reviewer",
+      "path": "skills/availability-strategy-reviewer/SKILL.md",
+      "purpose": "Review the architecture for resilience, redundancy, graceful degradation, recovery, and operational continuity.",
+      "handoffs": [
+        "deployment-view-writer",
+        "architecture-risk-assessor",
+        "adr-writer"
+      ]
+    }
+  ],
+  "templates": [
+    "templates/architecture-options-template.md",
+    "templates/quality-attribute-scenarios-template.md",
+    "templates/tradeoff-matrix-template.md",
+    "templates/layered-architecture-template.md",
+    "templates/component-boundaries-template.md",
+    "templates/integration-boundaries-template.md",
+    "templates/runtime-view-template.md",
+    "templates/deployment-view-template.md",
+    "templates/architecture-risk-register-template.md",
+    "templates/adr-template.md"
+  ]
+}

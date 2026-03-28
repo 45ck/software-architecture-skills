@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360">
+  <rect width="1200" height="360" fill="#1e3a8a"/>
+  <circle cx="1030" cy="70" r="160" fill="#60a5fa" opacity="0.15"/>
+  <text x="70" y="145" fill="#eff6ff" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="700">software-architecture-skills</text>
+  <text x="70" y="205" fill="#bfdbfe" font-family="Segoe UI, Arial, sans-serif" font-size="26">Architecture options, boundaries, risks, views, and tradeoff writing.</text>
+</svg>
