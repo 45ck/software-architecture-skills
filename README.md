@@ -93,9 +93,9 @@ LICENSE                              MIT
 
 ## Related workflow agents
 
-- [software-architect](https://github.com/45ck/workflow-agents) - Own architecture options, ADRs, and tradeoff analysis
-- [software-architect-beads](https://github.com/45ck/workflow-agents) - Track architecture risks and follow-up actions
-- [system-modeler](https://github.com/45ck/workflow-agents) - Support modelling that feeds architecture decisions
+- [software-architect](https://github.com/45ck/skill-harness) - Own architecture options, ADRs, and tradeoff analysis
+- [software-architect-beads](https://github.com/45ck/skill-harness) - Track architecture risks and follow-up actions
+- [system-modeler](https://github.com/45ck/skill-harness) - Support modelling that feeds architecture decisions
 
 ## Related skill packs
 
