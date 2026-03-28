@@ -91,6 +91,12 @@ uninstall.sh                         global uninstaller
 LICENSE                              MIT
 ```
 
+## Related workflow agents
+
+- [software-architect](https://github.com/45ck/workflow-agents) - Own architecture options, ADRs, and tradeoff analysis
+- [software-architect-beads](https://github.com/45ck/workflow-agents) - Track architecture risks and follow-up actions
+- [system-modeler](https://github.com/45ck/workflow-agents) - Support modelling that feeds architecture decisions
+
 ## Related skill packs
 
 - [business-analysis-skills](https://github.com/45ck/business-analysis-skills) - Business analysis techniques, workflows, and quality checks
